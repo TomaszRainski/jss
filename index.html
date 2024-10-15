@@ -3,6 +3,12 @@
 <head>
     <title> Rainski 3F</title>
     <script language="JavaScript">
+        function WinOpen_z1() {
+            window.open("z1_rain.html", "okienko_z1", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+        }
+        function WinOpen_z2() {
+            window.open("z2_rain.html", "okienko_z2", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+        }
         function WinOpen_z3() {
             window.open("zadanie3_rai.html", "okienko_z3", "toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
         }
@@ -35,6 +41,8 @@
     document.write("Szkielet zaliczeniowy javascript Tomasz Rainski 3F".fontcolor("#FF00FF").fontsize("2cm")+"<br>");
     </script>
     <form>
+        <input type="button" name="zadanie3" value="zadanie1-Rainski" onclick="WinOpen_z1(' ')">
+        <input type="button" name="zadanie4" value="zadanie2-Rainski" onclick="WinOpen_z2(' ')">
         <input type="button" name="zadanie3" value="zadanie3-Rainski" onclick="WinOpen_z3(' ')">
         <input type="button" name="zadanie4" value="zadanie4-Rainski" onclick="WinOpen_z4(' ')">
         <input type="button" name="zadanie5" value="zadanie5-Rainski" onclick="WinOpen_z5(' ')">
@@ -43,6 +51,7 @@
         <input type="button" name="zadanie8" value="zadanie8-Rainski" onclick="WinOpen_z8(' ')">
         <input type="button" name="zadanie9" value="zadanie9-Rainski" onclick="WinOpen_z9(' ')">
         <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+        
     </form>
 </body>
 
